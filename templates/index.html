@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'images/okioma.png' %}" >
+
+
+</head>
+<body>
+    <!-- main container start -->
+    <div class="main-container">
+        <!-- aside content start -->
+        <div class="aside">
+            
+            <div class="logo">
+                <a href="#"><span>C</span>ypher</a>
+                
+            </div>
+            
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <img src="{% static 'images/fabi.png' %}" alt="">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- aside container end -->
+        <!-- main content start -->
+        <div class="main-content">
+            <!-- home section start -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info">
+                            <h3 class="hello">Hello, my name is <span class="name">Okioma Haron</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Web Designer</span></h3>
+                            <p>I'm a Designer with extensive experience for over 4 years. My profession is to create and website design, Machine lerning and cyber Security and more...</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-image">
+                            <img src="{%  static 'images/fabi.png' %}" alt="my image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home section end -->
+            <!-- about section start -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Okioma Haron and <span>a Web Developer</span></h3>
+                                    <p>I have majorly focused on the development of websites using Django frame work of Python for the backend and PostgreSQL as my database. </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday : <span>28 July 2001</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>21</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>website : <span>www.cypherportfolio.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>harronmauti@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>Bachelor of Science in IT</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>+254 758 788 248 </span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>Nairobi</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="#Contact" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 92%;"></div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 96%;"></div>
+                                                <div class="skill-percent">96%</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>DJANGO</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 74%;"></div>
+                                                <div class="skill-percent">74%</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>PYTHON</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fa fa-calendar"> 2003 - 2014</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">Primary Education</h4>
+                                                    <p>Kenya Certificate of Primary Education (KCPE), Kiorori Primary School; Attained 285 marks out of 500, from the year 2007 to 2014.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fa fa-calendar"> 2015 - 2018</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">Secondary Education</h4>
+                                                    <p>Kenya Certificate of Secondary Education (KCSE), Gakero ELCK High School; Attained a mean grade of B- of 53 points in aggregate, from the year 2015 to 2018.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fa fa-calendar"> 2019 - 2023</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">University Education</h4>
+                                                    <p>Bachelor of Science in Information Technology, Taita Taveta University,  From September 2019- December 2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fas fa-calendar"> 2019 - 2021</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">Beginner</h4>
+                                                    <p>I developed my first website using PHP with just Logins and Signup forms for my own project.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fa fa-calendar"> 2021 - 2022</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">Introduction to Python Using Django framework</h4>
+                                                    <p>Enrolled myself in learning Python programming language hence majored myself on using Django for the backend of most of my projects.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot">
+
+                                                    </div>
+                                                    <h3  class="timeline-date">
+                                                        <i class="fa fa-calendar"> 2022 - present</i>
+                                                    </h3>
+                                                    <h4 class="timeline-title">Web Development</h4>
+                                                    <p>Still gaining experience on web development using Django for backend. I am also advacing my skills on python programming language on data analysis using Numpy and Pandas Python Libraries.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+
+            </section>
+            <!-- about section end -->
+            <!-- services section start -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Cabable of designing website webpages using Figma platform which is accessed online.  </p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                                <h4>Data Analysis</h4>
+                                <p>I have knowledge on data analysis using Pandas and Numpy which are python programming language libraries. </p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-feed"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>I offer services on website development </p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Database</h4>
+                                <p>Any queries partaining on databases am legible for that job.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Networking</h4>
+                                <p>I also offer services on networking related issues i.e creating and even troubshooting network. Majorly use CISCO Packet Tracer.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>GeoInformatics</h4>
+                                <p>I have knowledge on Geo related tasks i can offer advice and some practicals of course.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services section end -->
+            <!-- portfolio section start -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading">
+                            <h2>My Last Projects:</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-1.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-5.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-3.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-4.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-5.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                        <!--portfolio items start-->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{%  static 'images/portfolio-6.jpg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--portfolio items end-->
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio section end -->
+            <!-- contact section start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Any Question ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!--contact items start-->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call Us On</h4>
+                            <p>+254 758 788 248</p>
+                        </div>
+                        <!--contact items end-->
+                        <!--contact items start-->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <h4>Office</h4>
+                            <p>Kisii, Nairobi</p>
+                        </div>
+                        <!--contact items end-->
+                        <!--contact items start-->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>mugo0589@gmail.com</p>
+                        </div>
+                        <!--contact items end-->
+
+                        <!--contact items start-->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <h4>Website</h4>
+                            <p>www.cypherportfolio.com</p>
+                        </div>
+                        <!--contact items end-->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!--contact form-->
+                    <div class="row">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" name="name" >
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="body" class="form-control" id="" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn" href="{% url 'thanks' %}">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- contact section end -->
+        </div>
+        <!-- main content end -->
+
+    </div>
+    <!-- main container end -->
+</body>
+</html>
+{% endblock %}
